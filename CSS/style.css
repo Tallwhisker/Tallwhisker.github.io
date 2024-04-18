@@ -188,6 +188,7 @@ header img {
 
 .above#about, .above#contact {
     height: 400px;
+    text-align: center;
 }
 
 .above div {
