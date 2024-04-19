@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    min-width: 400px;
     background-color: var(--PrimaryBackgroundColor);
 }
 
@@ -89,8 +90,8 @@ a:active, .cta:active {
 }
 
 .title {
-    padding: 15px 0;
-    margin: 15px auto;
+    padding: 10px 0;
+    margin: 0 auto 15px;
     width: 60%;
     min-width: 255px;
     border-bottom: 1px solid var(--PrimaryAccentColor);
@@ -100,6 +101,11 @@ a:active, .cta:active {
 .altbg {
     background-color: var(--SecondaryBackgroundColor);
 }
+
+.show1, .show2, .show3 {
+    display: none;
+}
+
     /* HEADER */
 
 header {
@@ -145,9 +151,16 @@ header img {
     text-align: center;
 }
 
+/*
+.content * {
+    border: 1px solid red;
+}
+*/
+
 .content {
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -157,7 +170,7 @@ header img {
     height: auto;
     margin: 0 15px;
     max-width: 30%;
-    min-width: 400px;
+    min-width: 450px;
 }
 
 .textcontent {
@@ -170,23 +183,23 @@ header img {
 }
 
 .textcontent h3 {
-    width: 60%;
+    width: 70%;
     min-width: 255px;
-    margin: 15px;
+    margin: 15px 0 5px 0;
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid var(--PrimaryAccentColor);
 }
 
 .textcontent h4 {
-    margin: 0 15px;
+    width: 70%;
     padding: 10px;
     text-align: left;
 }
 
 .textcontent p {
-    margin: 15px;
-    padding: 10px;
+    max-width: 90%;
+    padding: 10px 0 0 10px;
     text-align: left;
     line-height: 1.3rem;
 }
@@ -270,6 +283,7 @@ footer p {
 
     /* MEDIA QUERIES */
 
+    /* Level 1 */
 @media only screen and (max-width: 1300px) {
 
     .hide1 {
@@ -289,10 +303,15 @@ footer p {
     }
 }
 
+    /* Level 2 */
 @media only screen and (max-width: 905px) {
 
     .hide2 {
         display: none;
+    }
+
+    .show2 {
+        display: block;
     }
 
     .above div {
@@ -303,20 +322,36 @@ footer p {
     html {
         font-size: 14px;
     }
+
+    .textcontent {
+        width: 75%;
+        align-items: center;
+    }
+
+    .textcontent h3, .textcontent h4 {
+        text-align: center;
+    }
+
+    .textcontent p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
 }
 
+    /* Level 3 */
 @media only screen and (max-width: 600px) {
 
     .hide3 {
         display: none;
     }
 
-    html {
-        font-size: 12px;
+    .show3 {
+        display: block;
     }
 
-    p {
-        font-size: 1.2rem;
+    html {
+        font-size: 12px;
     }
 
     .above#home {
@@ -329,6 +364,10 @@ footer p {
     
     .above div {
         width: 80%
+    }
+
+    .textcontent p {
+        font-size: 1.3rem;
     }
 
     #contactfooter {
@@ -345,7 +384,7 @@ footer p {
     }
 }
 
-    /* ISSUES APLENTY */
+    /* Level 4 */
 @media only screen and (max-width: 480px) {
 
     html {
