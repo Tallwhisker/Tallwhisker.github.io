@@ -147,7 +147,7 @@ header img {
 
 .container {
     width: 100%;
-    padding: 0 1% 2.5%;
+    padding: 1% 1% 2.5%;
     text-align: center;
 }
 
@@ -267,6 +267,7 @@ header img {
     font-size: 1.75rem;
     text-decoration: underline;
 }
+
     /* FOOTER */
 
 footer {
@@ -368,11 +369,6 @@ footer p {
 
     .textcontent p {
         font-size: 1.3rem;
-    }
-
-    #contactfooter {
-        position: fixed;
-        bottom: 0;
     }
     
     .title {
