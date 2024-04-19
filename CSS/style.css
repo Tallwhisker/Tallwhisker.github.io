@@ -116,7 +116,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--SecondaryBackgroundColor)
+    background: var(--SecondaryBackgroundColor);
+    border: 1px solid red;
 }
 
 header img {
