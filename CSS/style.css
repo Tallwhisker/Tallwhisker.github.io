@@ -147,7 +147,7 @@ header img {
 
 .container {
     width: 100%;
-    padding: 1% 1% 2.5%;
+    padding: 0 1% 2.5%;
     text-align: center;
 }
 
@@ -283,6 +283,13 @@ footer p {
 }
 
     /* MEDIA QUERIES */
+
+@media only screen and (min-height:800px) {
+    #contactfooter {
+        position: fixed;
+        bottom: 0;
+    }
+}
 
     /* Level 1 */
 @media only screen and (max-width: 1300px) {
