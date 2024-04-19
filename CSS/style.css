@@ -7,7 +7,7 @@ html {
     /* COLOR PALETTES */
     --PrimaryBackgroundColor: #fff;
     --SecondaryBackgroundColor: rgb(248, 248, 248);
-    --PrimaryAccentColor: rgb(252, 174, 7);
+    --PrimaryAccentColor: #EE3137;
     --SecondaryAccentColor: rgb(67, 66, 67);
 }
 
@@ -17,6 +17,7 @@ body {
 
 
     /* UNIVERSAL STYLES */
+    
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +34,10 @@ h2 {
 
 h3 {
     font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
 }
 
 a {
@@ -161,13 +166,29 @@ header img {
     margin: 0 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
+.textcontent h3 {
+    width: 60%;
+    min-width: 255px;
+    margin: 15px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--PrimaryAccentColor);
+}
+
+.textcontent h4 {
+    margin: 0 15px;
+    padding: 10px;
+    text-align: left;
+}
+
 .textcontent p {
-    max-width: 75%;
-    margin-bottom: 15px;
+    margin: 15px;
+    padding: 10px;
+    text-align: left;
+    line-height: 1.3rem;
 }
 
 
@@ -244,7 +265,7 @@ footer {
 
 footer p {
     font-size: 0.75rem;
-    color: var(--PrimaryAccentColor);
+    color: white;
 }
 
     /* MEDIA QUERIES */
@@ -261,6 +282,10 @@ footer p {
 
     .above#home {
         height: 500px;
+    }
+
+    .meetus div {
+        min-width: 300px;
     }
 }
 
@@ -313,6 +338,10 @@ footer p {
     
     .title {
         width: 80%;
+    }
+
+    .meetus div {
+        min-width: 250px;
     }
 }
 
