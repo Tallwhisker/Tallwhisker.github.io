@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    min-width: 400px;
     background-color: var(--PrimaryBackgroundColor);
 }
 
@@ -103,41 +102,12 @@ a:active, .cta:active {
     background-color: var(--SecondaryBackgroundColor);
 }
 
-.show1, .show2, .show3 {
-    display: none;
-}
 
     /* HEADER */
 
-header {
+header, .navbar, .navbar ul {
     height: 3.125rem;
-    width: 100%;
-    padding-left: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--SecondaryBackgroundColor);
-    border-bottom: 1px solid var(--PrimaryAccentColor);
-}
-
-header img {
-    height: 100%;
-    width: auto;
-}
-
-.navbar {
-    height: 3.125rem;
-    color: black;
-}
-
-.navbar ul {
-    height: 3.125rem;
-}
-
-.navbar ul li {
-    list-style-type: none;
-    display: inline-block;
-}
+}  /* Don't forget anchor line height */
 
 .navbar a {
     line-height: 3.125rem;
@@ -145,69 +115,28 @@ header img {
     display: inline-block;
 }
 
-    /* MAIN */
-
-.container {
+header {
     width: 100%;
-    padding: 0 1% 2.5%;
-    text-align: center;
-}
-
-/*
-.content * {
-    border: 1px solid red;
-}
-*/
-
-.content {
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 10px;
+    padding-left: 1%;
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--SecondaryBackgroundColor);
+    border-bottom: 1px solid var(--PrimaryAccentColor)
 }
 
-.content img {
-    height: auto;
-    max-width: 30%;
-    min-width: 450px;
-    margin: 0 15px;
+header img {
+    height: 100%;
+    width: auto;
 }
 
-.textcontent {
-    width: 30%;
-    min-width: 400px;
-    margin: 0 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.textcontent h3 {
-    width: 70%;
-    min-width: 255px;
-    margin: 15px 0 5px 0;
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid var(--PrimaryAccentColor);
-}
-
-.textcontent h4 {
-    width: 70%;
-    padding: 10px;
-    text-align: left;
-}
-
-.textcontent p {
-    max-width: 90%;
-    padding: 10px 0 0 10px;
-    text-align: left;
-    line-height: 1.3rem;
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
 }
 
 
-    /* MAIN-above */
+    /* Above */
 
 .above {
     width: 100%;
@@ -215,7 +144,6 @@ header img {
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .above#home {
@@ -228,8 +156,8 @@ header img {
 }
 
 .above div {
-    width: 33%;
-    margin: 0 50px;
+    max-width: 33%;
+    margin-left: 10%;
     color: white;
 }
 
@@ -239,9 +167,81 @@ header img {
     margin-bottom: 10px;
 }
 
+
+    /* Content */
+
+.LogoName {
+    aspect-ratio: 13 / 10;
+}
+
+.JobsImage {
+    aspect-ratio: 10 / 12.3;
+}
+
+.container {
+    width: 100%;
+    padding: 0 1% 2.5%;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.content img {
+    height: auto;
+    max-width: 40%;
+    margin: 15px;
+}
+
+.swap1-2 {
+    order: 1;
+}
+.swap2-1 {
+    order: 2;
+}
+
+.textcontent, .contactcontent {
+    width: 40%;
+    min-width: 300px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textcontent h3, .contactcontent h3 {
+    width: 70%;
+    min-width: 250px;
+    margin: 15px 0 5px 0;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--PrimaryAccentColor);
+}
+
+.textcontent h4, .contactcontent h4 {
+    width: 70%;
+    padding: 10px;
+    text-align: left;
+}
+
+.textcontent p {
+    width: 80%;
+    padding: 10px 0 0 10px;
+    text-align: left;
+    line-height: 1.3rem;
+}
+
+
     /* HOME */
 
+
     /* ABOUT */
+
 
 .meetus {
     display: flex;
@@ -250,22 +250,33 @@ header img {
 }
 
 .meetus div {
-    min-width: 400px;
     max-width: 20%;
+    min-width: 250px;
     margin: 15px;
+
+}
+
+.meetus div h3 {
+    width: 60%;
+    margin: 0 auto 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--PrimaryAccentColor);
 }
 
 .meetus img {
     height: auto;
-    width: 90%;
+    width: 100%;
 }
 
     /* CONTACT */
 
-.textcontent a {
+
+
+.contactcontent a {
     font-size: 1.75rem;
     text-decoration: underline;
 }
+
 
     /* FOOTER */
 
@@ -281,6 +292,7 @@ footer p {
     font-size: 0.75rem;
 }
 
+
     /* MEDIA QUERIES */
 
 @media only screen and (min-height:800px) {
@@ -290,76 +302,94 @@ footer p {
     }
 }
 
+@media only screen and (min-height: 1180px)
+         and (min-width: 858px) {
+    #meetusfooter {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
     /* Level 1 */
 @media only screen and (max-width: 1300px) {
 
-    .hide1 {
-        display: none;
-    }
-
     .above div {
-        width: 60%;
+        max-width: 60%;
     }
 
     .above#home {
         height: 500px;
     }
 
-    .meetus div {
-        min-width: 300px;
-    }
 }
 
     /* Level 2 */
-@media only screen and (max-width: 905px) {
+@media only screen and (max-width: 980px) {
 
-    .hide2 {
-        display: none;
+    header, .navbar, .navbar ul {
+        height: 2.5rem;
+    }  /* Don't forget anchor line height */
+    .navbar a {
+        line-height: 2.5rem;
     }
 
-    .show2 {
-        display: block;
+    .swap1-2 {
+        order: 2;
+    } 
+
+    .swap2-1 {
+        order: 1;
+    }
+
+    .above {
+        justify-content: center;
     }
 
     .above div {
-        width: 75%;
-        text-align: center;
+        max-width: 75%;
+        margin: 0;
     }
 
-    html {
-        font-size: 14px;
+    .content img {
+        max-width: 60%;
     }
 
-    .textcontent {
+    .textcontent, .contactcontent {
         width: 75%;
         align-items: center;
     }
 
-    .textcontent h3, .textcontent h4 {
+    .textcontent h3, .textcontent h4,
+     .contactcontent h3, .contactcontent h4 {
         text-align: center;
     }
 
-    .textcontent p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+    h1 {
+        font-size: 2.5rem;
     }
-
+    
+    h2 {
+        font-size: 2.25rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+    
+    a {
+        font-size: 1.125rem;
+    }
+    .contactcontent a {
+        font-size: 1.5rem;
+    }
 }
 
     /* Level 3 */
-@media only screen and (max-width: 600px) {
-
-    .hide3 {
-        display: none;
-    }
-
-    .show3 {
-        display: block;
-    }
-
-    html {
-        font-size: 12px;
-    }
+@media only screen and (max-width: 700px) {
 
     .above#home {
         height: 400px;
@@ -370,13 +400,46 @@ footer p {
     }
     
     .above div {
-        width: 80%
+        max-width: 90%
     }
 
-    .textcontent p {
-        font-size: 1.3rem;
+    .content img {
+        max-width: 75%;
+        min-width: 250px;    
+    }
+
+    .textcontent, .textcontent p {
+        width: 95%;
+    }
+
+    .textcontent h3, .textcontent h4 {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 2rem;
     }
     
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+    
+    a {
+        font-size: 1rem;
+    }
+
+    .contactcontent a {
+        font-size: 1.25rem;
+    }
+
     .title {
         width: 80%;
     }
@@ -387,19 +450,7 @@ footer p {
 }
 
     /* Level 4 */
-@media only screen and (max-width: 480px) {
-
-    html {
-        font-size: 10px;
-    }
-
-    p {
-        font-size: 1.3rem;
-    }
-
-    .above div {
-        width: 100%;
-    }
+@media only screen and (max-width: 510px) {
 
     .title {
         width: 90%;
