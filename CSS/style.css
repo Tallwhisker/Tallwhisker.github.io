@@ -1,8 +1,8 @@
 html {
-    font-family: "Ubuntu", serif;
+    font-family: "Roboto", serif;
     font-size: 16px;
     color: black;
-
+    scroll-behavior: smooth;
 
     /* COLOR PALETTES */
     --PrimaryBackgroundColor: #fff;
@@ -26,18 +26,25 @@ body {
 
 h1 {
     font-size: 2.75rem;
+    font-family: "Noto Serif";
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    font-family: "Noto Serif";
+
 }
 
 h3 {
     font-size: 1.75rem;
+    font-family: "Noto Serif";
+
 }
 
 h4 {
     font-size: 1.5rem;
+    font-family: "Noto Serif";
+
 }
 
 a {
@@ -67,6 +74,7 @@ a:hover {
     background-color: var(--PrimaryAccentColor);
     border: none;
     cursor:pointer;
+    border-bottom-left-radius: 3px;
 }
 
 .cta:hover {
@@ -121,8 +129,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--SecondaryBackgroundColor);
-    border-bottom: 1px solid var(--PrimaryAccentColor)
+    background: url(../Media/HHTHeaderBG.webp) top;
 }
 
 header img {
@@ -140,10 +147,12 @@ header img {
 
 .above {
     width: 100%;
-    background: url(../Media/loungeview.jpg) center;
+    background: url(../Media/HHTHeader2.webp) center;
     background-size: cover;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .above#home {
@@ -158,7 +167,10 @@ header img {
 .above div {
     max-width: 33%;
     margin-left: 10%;
+    padding: 10px;
     color: white;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 10px;
 }
 
 .above h1 {
@@ -170,12 +182,13 @@ header img {
 
     /* Content */
 
-.LogoName {
-    aspect-ratio: 13 / 10;
+
+.LogoNameWhite {
+    aspect-ratio: 12.3 / 10;
 }
 
 .JobsImage {
-    aspect-ratio: 10 / 12.3;
+    aspect-ratio: 11.7 / 10;
 }
 
 .container {
@@ -236,6 +249,11 @@ header img {
     line-height: 1.3rem;
 }
 
+#JobIcon {
+    vertical-align: bottom;
+    margin: 0;
+}
+
 
     /* HOME */
 
@@ -253,7 +271,6 @@ header img {
     max-width: 20%;
     min-width: 250px;
     margin: 15px;
-
 }
 
 .meetus div h3 {
