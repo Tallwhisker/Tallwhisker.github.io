@@ -24,6 +24,14 @@ body {
     box-sizing: border-box;
 }
 
+#videoBG {
+    position: fixed;
+    top: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+  }
+
     /*  TAKE ME HOME  */
     #TAKEMEHOME {
         position: fixed;
