@@ -1,3 +1,6 @@
 [submodule "InventoryViewer"]
 	path = InventoryViewer
 	url = https://github.com/Tallwhisker/GW2Site
+[submodule "WebProjects"]
+	path = WebProjects
+	url = https://github.com/Tallwhisker/WebProjects
