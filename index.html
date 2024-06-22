@@ -1,24 +1,143 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <link href="./CSS/style.css" rel="stylesheet" type="text/css">
-        <title>Tallwhisker Home</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="./InventoryViewer/index.html">GW2 Inventory Viewer</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <p>Should probably be something here, but there's not.<br>
-                It's most likely temporary.</p>
-        </main>
-        <footer>
 
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link href="./CSS/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./Media/ProfilePictureKevinR.jpg">
+    <script async src="./main.js" type="text/JavaScript"></script>
+    <title>Kevin Rickardsson</title>
+</head>
+
+<body>
+    <main>
+        <section id="profile">
+            <img id="profilePicture" src="./Media/ProfilePictureKevinR.jpg" alt="Profile picture" title="Hej!">
+            <div id="info">
+                <h2>Information</h2>
+                <span><img src="./Media/HomeIcon.svg" alt="Home Icon">Skåne, Sverige</span>
+                <!-- <span><img src="./Media/MailIcon.svg" alt="Email Icon">
+                    <a href="#">Email</a>
+                </span> -->
+                <span><img src="./Media/GenericLink.svg" alt="Link Icon">
+                    <a href="http://github.kevinrickardsson.se" target="_blank">GitHub</a>
+                </span>
+            </div>
+            <div id="education">
+                <h2>Utbildning</h2>
+                <div>
+                    <h3>Systemutvecklare C#</h3>
+                    <p>2024-05 - Pågående</p>
+                    <p>Lexicon Malmö</p>
+                </div>
+                <div>
+                    <h3>Allmän Kurs</h3>
+                    <p>2014-01 - 2016/06</p>
+                    <p>Österlens Folkhögskola</p>
+                </div>
+                <div>
+                    <h3>Yrkesförarutbildning</h3>
+                    <p>2012-04 - 2012-09</p>
+                    <p>Malenagymnasiet Sjöbo</p>
+                </div>
+            </div>
+            <div id="skills">
+                <h2>Kunskaper</h2>
+                <h3>Teknik</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                    <li>MS Office (365)</li>
+                </ul>
+                <h3>Språk</h3>
+                <ul>
+                    <li>Svenska</li>
+                    <li>Engelska</li>
+                </ul>
+                <h3>Behörigheter</h3>
+                <ul>
+                    <li>AMBECEDE</li>
+                    <li>YKB & Förarkort</li>
+                    <li>Truck A 2, 3, 4 + B 1, 2</li>
+                    <li>Kran upp till 18 t/m</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Pågående</h2>
+                <ul>
+                    <li>Fixa email</li>
+                    <li>React.js</li>
+                    <li>ASP.NET</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </section id="profile">
+        <section id="namePlate">
+            <h1>Kevin Rickardsson</h1>
+            <h3>Nyfiken, ordningsam med en fallenhet för teknik.</h3>
+            <p>Jag har ett stort intresse för infrastruktur och hur saker i allmänhet fungerar.
+                Jag är självgående och snabbupplärd och jag är angelägen att ha fungerande rutiner och tydlig struktur i arbetet,
+                vilket i min åsikt är en stor fördel när det gäller bland annat kodande. 
+                <br>
+                Jag har även under många år ägnat mig åt MMORPG's och har på senare tid även spenderat en stor del av min fritid till att programmera.
+            </p>
+        </section>
+        <section id="workExperience">
+            <div class="job">
+                <h3 class="jobTitle">Busschaufför</h3>
+                <p class="jobTime">2021-12 - 2023-11 / Bergkvarabuss</p>
+                <p class="jobDescription">Framförning av tung buss i linjetrafik med 
+                    tillhörande ansvar för säkerhet och kundbemötande. Senare även körning av skolbuss där jag planerade och
+                    utförde rundan själv.
+                </p>
+            </div>
+            <div class="job">
+                <h3 class="jobTitle">Busschaufför, Yttre Trafikledare</h3>
+                <p class="jobTime">2016-12 - 2021-12 / Transdev Sverige AB</p>
+                <p class="jobDescription">Framförning av tung buss i linjetrafik med 
+                    tillhörande ansvar för säkerhet och kundbemötande. 2019 Yttre Trafikledare på depån där jag effektivt
+                    sänkte företagets vitesbelopp genom att arbeta proaktivt med underhåll och samkörning tillsammans med 
+                    verkstaden. Efter någon månad blev jag ombedd att även sköta planering av fordonsflottan i sydöstra Skåne.
+                    <br>
+                    Företagsövergång 2021-12 p.g.a. upphandlad trafik.
+                </p>
+            </div>
+        </section>
+        <section id="certificates">
+            <h2>Certifikat</h2>
+            <div>
+                <a href="https://www.freecodecamp.org/certification/KevinRickardsson/foundational-c-sharp-with-microsoft" target="_blank">
+                    <img src="./Media/CSharpCertificate.png" alt="Microsoft C Sharp Certificate">
+                </a>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projekt</h2>
+            <div>
+                <h3>GW2 Inventory Viewer - <a href="https://github.com/Tallwhisker/GW2Site">GitHub</a></h3>
+                <a href="./InventoryViewer/" target="_blank"><img src="./Media/GW2InvViewer.png" alt="GW2 Inventory Viewer"></a>
+                <p>Några veckor in på lärandet av JavaScript ville jag prova på att lösa ett problem jag haft när jag spelar.
+                    Nämligen möjligheten att se mitt inventory från spelet när jag inte är inloggad. Jag behövde lära mig fetch
+                    och lösa en hel del problem med datastruktur samt lära mig hur snabbt man kan hamna i technical debt i projekt.
+                    <br>
+                    Se GitHub repo för mer information.
+                </p>
+            </div>
+            <div>
+                <h3>Hus Hem & Trädgård</h3>
+                <a href="https://hushemtradgard.se/" target="_blank"><img src="./Media/HusHemTradgard.png" alt=""></a>
+                <p>Hemsida åt ett lokalt företag som sysslar med lite allt möjligt inom renovering och skötsel.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
 </html>
