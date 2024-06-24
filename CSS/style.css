@@ -86,7 +86,6 @@ section {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
     
     #profilePicture {
         max-width: 15rem;
@@ -107,9 +106,11 @@ section {
             }
         }
     }
+    > div + div {
+        border-bottom: 1px solid gray;
+    }
 
     > div {
-        border-bottom: 1px solid gray;
         padding: 0.5rem 0.5rem 1rem 0.5rem;
 
         h3 {
@@ -180,9 +181,12 @@ main {
     #projects {
         padding: 0.5rem;
 
+        > div + div {
+            border-top: 1px solid lightgray;
+        }
+
         div {
             padding: var(--levelTwoInsert) 0;
-            border-bottom: 1px solid lightgray;
 
             a img {
                 max-width: 30rem;
@@ -205,7 +209,7 @@ main {
     gap: var(--gapSize);
 
     #profile {
-        grid-row: 1 / span all;
+        grid-row: 1 / span 4;
         grid-column: 1;
     }
 
@@ -230,6 +234,18 @@ main {
     }
 }
 
+footer {
+    margin-top: var(--gapSize);
+    padding: 0.5rem;
+    background-color: var(--colorNavyBlue);
+    color: white;
+    border-radius: 2px;
+
+    > p {
+        font-size: 0.75rem;
+    }
+}
+
 @media screen and (max-width: 900px) {
     #projects img, #certificates img {
         width: 75%;
@@ -250,18 +266,22 @@ main {
     }
 
     body {
-        padding: 0;
+        padding: var(--gapSize) 0 0;
     }
 }
 
 @media screen and (max-width: 550px) {
     main {
-        
         #profile {
             grid-row: 2;
             grid-column: 1 / 3;
             flex-flow: row wrap;
             justify-content: space-around;
+
+            #profilePicture {
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
         }
         
         #namePlate {
@@ -284,4 +304,4 @@ main {
             grid-column: 1 / 3;
         }
     }
-    }
+}
