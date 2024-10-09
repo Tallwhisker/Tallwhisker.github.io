@@ -171,10 +171,20 @@ main {
 
         > div {
             padding-left: var(--levelTwoInsert);
+            display: flex;
+            flex-flow: row wrap;
+            gap: 1rem;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a {
+            display: flex;
+            justify-content: center;
         }
 
         img {
-            max-width: 20rem;
+            max-width: 25rem;
+            /* max-width: 30%; */
             height: auto;
         }
     }
@@ -220,7 +230,7 @@ main {
     }
 
     #workExperience {
-        grid-row: 2;
+        grid-row: 4;
         grid-column: 2;
     }
 
@@ -230,7 +240,7 @@ main {
     }
 
     #projects {
-        grid-row: 4;
+        grid-row: 2;
         grid-column: 2;
     }
 }
@@ -301,7 +311,7 @@ footer {
         }
         
         #workExperience {
-            grid-row: 3;
+            grid-row: 5;
             grid-column: 1;
         }
         
@@ -311,7 +321,7 @@ footer {
         }
         
         #projects {
-            grid-row: 5;
+            grid-row: 3;
             grid-column: 1;
         }
     }

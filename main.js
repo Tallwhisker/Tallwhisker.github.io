@@ -1,1 +1,0 @@
-"Some 20 days after starting to learn JavaScript I decided to solve an issue I've had when playing. Namely viewing my account inventory when I am not in-game. I needed to learn and solve quite a few issues with fetching and data management as well as learning about technical debt."
