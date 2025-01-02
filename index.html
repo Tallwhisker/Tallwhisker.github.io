@@ -1,160 +1,16 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
-    <meta charset="UTF-8">
-    <link href="./CSS/style.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./Media/ProfilePictureKevinR.jpg">
-    <script async src="./main.js" type="text/JavaScript"></script>
     <title>Kevin Rickardsson</title>
 </head>
-
 <body>
     <main>
-        <section id="profile">
-            <img id="profilePicture" src="./Media/ProfilePictureKevinR.jpg" alt="Profile picture" title="Hej!">
-            <div id="info">
-                <h2>Information</h2>
-                <span><img src="./Media/HomeIcon.svg" alt="Home Icon">Skåne, Sverige</span>
-                <span><img src="./Media/MailIcon.svg" alt="Email Icon">
-                    <a href="mailto: kontakt@kevinrickardsson.se" target="_blank" rel="noreferrer">Email</a>
-                </span>
-                <span><img src="./Media/GenericLink.svg" alt="Link Icon">
-                    <a href="https://github.com/Tallwhisker" target="_blank" rel="noreferrer">GitHub</a>
-                </span>
-            </div>
-            <div id="education">
-                <h2>Utbildning</h2>
-                <div>
-                    <h3>Systemutvecklare .NET</h3>
-                    <p>2024-05 - Pågående</p>
-                    <p>Lexicon Malmö</p>
-                </div>
-                <div>
-                    <h3>Allmän Kurs</h3>
-                    <p>2014-01 - 2016-06</p>
-                    <p>Österlens Folkhögskola</p>
-                </div>
-                <div>
-                    <h3>Yrkesförarutbildning</h3>
-                    <p>2012-04 - 2012-09</p>
-                    <p>Malenagymnasiet Sjöbo</p>
-                </div>
-            </div>
-            <div id="skills">
-                <h2>Kunskaper</h2>
-                <h3>C#</h3>
-                <ul>
-                    <li>ASP.NET MVC</li>
-                    <li>ADO.NET</li>
-                    <li>Entity Framework Core</li>
-                </ul>
-                <h3>JavaScript</h3>
-                <ul>
-                    <li>React</li>
-                    <li>NextJS</li>
-                    <li>Tailwind</li>
-                    <li>Bootstrap</li>
-                </ul>
-                <h3>Andra</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>PHP</li>
-                    <li>MySQL, SqLite, MariaDB</li>
-                    <li>Git / Github</li>
-                    <li>HTML & CSS</li>
-                    <li>MS Office (365)</li>
-                </ul>
-                <h3>Språk</h3>
-                <ul>
-                    <li>Svenska</li>
-                    <li>Engelska</li>
-                </ul>
-                <h3>Behörigheter</h3>
-                <ul>
-                    <li>AMBECEDE</li>
-                    <li>YKB & Förarkort</li>
-                    <li>Truck A 2, 3, 4 + B 1, 2</li>
-                    <li>Kran upp till 18 t/m</li>
-                </ul>
-            </div>
-        </section id="profile">
-        <section id="namePlate">
-            <h1>Kevin Rickardsson</h1>
-            <h3>Nyfiken, ordningsam med en fallenhet för teknik.</h3>
-            <p>Jag har ett stort intresse för infrastruktur och hur saker i allmänhet fungerar.
-                Jag är självgående, snabbupplärd och angelägen att ha fungerande rutiner och tydlig struktur i arbetet,
-                vilket i min åsikt är en stor fördel när det gäller bland annat kodande. 
-                <br>
-                Jag har under många år ägnat mig åt MMORPG's och har på senare tid även spenderat en stor del av min fritid till att programmera.
-            </p>
-        </section>
-        <section id="projects">
-            <h2>Projekt</h2>
-            <div>
-                <h3>Twitch Streamers</h3>
-                <p>
-                    Hjälper ofta en streamer på <a href="https://www.twitch.tv">Twitch</a>-platformen att utveckla skript & program för dennes stream för att utveckla produkten.
-                    Bland annat generell support, nedanstående projekt samt diverse funktioner och skript för att underlätta och stödja i arbetet.
-                </p>
-            </div>
-            <div>
-                <h3>Twitch - Discord Subscriber API</h3>
-                <p>
-                    Behövde en lösning för en Twitch streamer att synkronisera subscribers mellan platformarna Twitch och Discord. <br>
-                    Jag byggde ett webbAPI med PHP och MariaDB på en Apache server och skrev ett program i C# som hämtar datan från Twitch regelbundet och schemalade detta med CronJob.
-                    Programmet formaterar och synkroniserar alla ändringar i subscribers och laddar sedan upp ändringarna. <br>
-                    Datan hämtas sedan av en chatbot på Discord för att hantera roller för att streamern ska kunna ha en speciell roll för sina supporters.
-                </p>
-            </div>
-            <div>
-                <h3>GW2 Inventory Viewer</h3>
-                <a href="https://github.com/Tallwhisker/GW2Site"><img src="./Media/GW2InvViewer.png" alt="GW2 Inventory Viewer"></a>
-                <p>Ville lära mig hur JavaScript fungerade lite mer så byggde en hemsida som hämtar data från GuildWars2 API och presenterar den på en hemsida
-                    där man kan bläddra mellan olika kategorier av ens personliga spelkonto. Använde LocalStorage i webbläsaren för att spara information, fick 
-                    utveckla min datastruktur löpande efterhand jag utvecklade funktioner. Påbörjade senare en omskrivning i <a href="https://github.com/Tallwhisker/Gw2View">React & Bootstrap.</a>
-                </p>
-            </div>
-            <div>
-                <h3>Hus Hem & Trädgård</h3>
-                <a href="https://hushemtradgard.se/" target="_blank"><img src="./Media/HusHemTradgard.png" alt=""></a>
-                <p>Hemsida åt ett lokalt företag som sysslar med lite allt möjligt inom renovering och skötsel.</p>
-            </div>
-        </section>
-        <section id="workExperience">
-            <h2>Arbete</h2>
-            <div class="job">
-                <h3 class="jobTitle">Busschaufför</h3>
-
-                <p class="jobTime">2016-12 - 2023-11</p>
-                <p class="jobDescription">Framförning av tung buss i linjetrafik med 
-                    tillhörande ansvar för säkerhet och kundbemötande.<br> 
-                    2019 Yttre Trafikledare på depån där jag effektivt
-                    sänkte företagets vitesbelopp genom att arbeta proaktivt med underhåll och samkörning tillsammans med 
-                    verkstaden. Efter någon månad blev jag ombedd att även sköta planering av fordonsflottan i sydöstra Skåne.<br>
-                    2022-2023 Skolbuss & Beställning. Var även aktiv i planeringen av linjer.
-                </p>
-            </div>
-        </section>
-        <section id="certificates">
-            <h2>Certifikat</h2>
-            <div>
-                <a class="certImg" href="https://www.freecodecamp.org/certification/KevinRickardsson/foundational-c-sharp-with-microsoft" target="_blank">
-                    <img src="./Media/CSharpCertificate.png" alt="Microsoft C Sharp Certificate">
-                </a>
-                <img class="certImg" src="./Media/JavaScript3Certificate.png" alt="Certificate of Javascript course">
-                <img class="certImg" src="./Media/SQLCertificate.png" alt="Certificate of SQL course">
-            </div>
-        </section>
+        <p>Empty.</p>
+        <a href="https://github.com/Tallwhisker">GitHub</a>
     </main>
     <footer>
-        <p>&copy; Kevin Rickardsson 2024</p>
-        <p>Uppdaterad 2024/10/14</p>
     </footer>
 </body>
-
 </html>
